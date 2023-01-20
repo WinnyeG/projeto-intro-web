@@ -1,0 +1,126 @@
+*{  padding: 0;
+    margin: 0;}
+
+div{
+    display: grid;
+    grid-template-columns:1fr 3fr 1fr ;
+    grid-template-rows: 10vw 20vw 20vw 20vw 20vw 20vw 20vw 20vw;
+}
+
+header {
+    background-color: rgb(111, 42, 175);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    grid-column-start:1;
+    grid-column-end: 5;
+    height: 60px;
+    }
+
+main{
+    background-color: rgb(238, 228, 248);
+    display: grid;
+    grid-column-start:2;
+    grid-column-end: 3;
+    
+}
+section{
+    grid-column-start: 2;
+    grid-column-end:3 ;
+    border: solid 3px rgb(111, 42, 175);
+    justify-content: center;
+    height: 80%;
+    padding: 5px
+}
+h4{
+    position: relative;
+    left: 44%;
+    bottom: 100%;
+    font-size: 16pt;
+    padding: 5px;
+}
+.texto{
+    position: relative;
+    width: 50%;
+    left: 45%;
+    bottom: 100%;
+    font-size: 14pt;
+    display: grid;
+    color: black;
+}
+
+.fotos{
+    position: relative;
+    left: 5%;
+    height: 150px;
+    width: 150px;
+}
+
+nav{
+    grid-column-start: 2;
+    grid-column-end:3 ;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+dl{
+    font-family:'Lucida Sans';
+    font-size: 16px;
+    font-style: oblique;
+    }
+
+    
+footer{
+    display: grid;
+    grid-column-start:1;
+    grid-column-end: 5;
+    color: white;
+    background-color: rgb(61, 40, 80) ;
+    width: 100%;
+    height: 60px;     
+    align-items: center;
+    justify-content: center; 
+    }
+
+    @media screen and (max-width:500px){
+
+        div{
+            display: grid;
+            grid-template-columns:1fr 3fr 1fr ;
+            grid-template-rows: 10vw 35vw 35vw 35vw 35vw 35vw 35vw 35vw;
+        }
+
+        footer{
+            font-size: 7pt;
+            
+        }
+         
+        h4{
+            position: relative;
+            left: 48%;
+            bottom: 90%;
+            font-size: 10pt;
+            padding: 5px;
+         }
+
+        .texto{
+            position: relative;
+            width: 50%;
+            left: 50%;
+            bottom: 85%;
+            font-size: 8pt;
+            display: grid;
+            color: black;
+        }
+
+        .fotos{
+            left: 1%;
+            top: 5%;
+            height: 100px;
+            width: 100px;
+        }
+    }
+    
+    
